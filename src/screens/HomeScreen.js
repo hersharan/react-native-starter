@@ -2,7 +2,7 @@ import React from "react";
 import { Text, StyleSheet, View, Button, TouchableOpacity } from "react-native";
 
 const HomeScreen = ({ navigation }) => {
-  console.log(navigation);
+  // console.log(navigation);
   return (
     <View>
       <Text style={styles.text}>Unlimited Power</Text>
@@ -19,8 +19,12 @@ const HomeScreen = ({ navigation }) => {
         onPress={() => { navigation.navigate('ImageGallery') }}
       />
       <Button
-        title="Go to Kill Counter"
+        title="Go to Counter"
         onPress={() => { navigation.navigate('KillCount') }}
+      />
+      <Button
+        title="Go to Search"
+        onPress={() => { navigation.navigate('Search') }}
       />
       {/* <TouchableOpacity onPress={() => { props.navigation.navigate('List') }}>
         <Text>Go to List</Text>
