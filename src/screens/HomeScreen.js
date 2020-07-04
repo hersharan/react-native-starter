@@ -26,6 +26,22 @@ const HomeScreen = ({ navigation }) => {
         title="Go to Search"
         onPress={() => { navigation.navigate('Search') }}
       />
+      <Button
+        title="Drag Drop Sample 1"
+        onPress={() => { navigation.navigate('ListSampleOne') }}
+      />
+      <Button
+        title="Drag Drop Sample 2"
+        onPress={() => { navigation.navigate('ListSampleTwo') }}
+      />
+      <Button
+        title="Drag Drop Sample 3"
+        onPress={() => { navigation.navigate('ListSampleThree') }}
+      />
+      <Button
+        title="Drag Drop Sample 4"
+        onPress={() => { navigation.navigate('ListSampleFour') }}
+      />
       {/* <TouchableOpacity onPress={() => { props.navigation.navigate('List') }}>
         <Text>Go to List</Text>
       </TouchableOpacity> */}
